@@ -1,0 +1,6 @@
+name = Webcomic Navigation
+description = Views pager plugin that allows webcomic style navigation. 
+package = Custom
+core = 7.x
+dependencies[] = views 
+files[] = webcomic_nav_plugin.inc 

@@ -1,0 +1,21 @@
+<?php
+
+/*
+ *
+ * Implements hook_views_plugins()
+ */
+ function webcomic_nav_views_plugins() { 
+   $plugins = array(
+     'pager' => array( 
+       'webcomic' => array(
+         'title' => t('Webcomic'),
+         'help' => t("Display all items one at a time in webcomic fashion"),
+         'handler' => 'webcomic_nav_plugin',
+         'help topic' => 'pager-webcomic',
+         'path' => drupal_get_path('module', 'webcomic_nav'), 
+         'uses options' => TRUE,
+      ),
+     ),
+   ); 
+   return $plugins;
+  }
